@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Application GA version of logger configuration -->
+<Configuration xmlns:xi="http://www.w3.org/2001/XInclude" status="INFO">
+    <Appenders>
+        <xi:include href="console-appender-pattern.xml"/>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppenderColor"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>SortingAlgorithms</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+  <properties>
+      <slf4j-version>1.7.25</slf4j-version>
+      <junit-version>4.13.2</junit-version>
+      <junit-platform-launcher-version>1.1.1</junit-platform-launcher-version>
+      <log4j-version>2.14.1</log4j-version>
+      <guava-version>27.0.1-jre</guava-version>
+      <joda-time-version>2.9.5</joda-time-version>
+      <commons-version>3.5</commons-version>
+      <hakky54-version>2.5.0</hakky54-version>
+  </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.github.hakky54/logcaptor -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava-version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.stefanbirkner</groupId>
+            <artifactId>system-rules</artifactId>
+            <version>1.19.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-version}</version>
+        </dependency>
+        <!--    <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j-version}</version>
+           </dependency>
+         -->
+        <dependency>
+	  		<groupId>org.apache.logging.log4j</groupId>
+	  		<artifactId>log4j-slf4j-impl</artifactId>
+	  		<version>${log4j-version}</version>
+	  	</dependency>
+    </dependencies>
+    <name>Sorting Algorithms</name>
+    <url>https://bitbucket.org/dmcreyno/sortingalgorithms</url>
+    <organization>
+    	<name>Respect Gravity</name>
+    </organization>
+    <scm>
+    	<url>https://bitbucket.org/dmcreyno/sortingalgorithms</url>
+    	<developerConnection>dmcreyno</developerConnection>
+    </scm>
+</project>
