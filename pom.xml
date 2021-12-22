@@ -12,7 +12,7 @@
       <slf4j-version>1.7.25</slf4j-version>
       <junit-version>4.13.2</junit-version>
       <junit-platform-launcher-version>1.1.1</junit-platform-launcher-version>
-      <log4j-version>2.14.1</log4j-version>
+      <log4j-version>2.17.0</log4j-version>
       <guava-version>27.0.1-jre</guava-version>
       <joda-time-version>2.9.5</joda-time-version>
       <commons-version>3.5</commons-version>
